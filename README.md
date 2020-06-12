@@ -2,6 +2,18 @@
 
 # Welcome to the valley!
 
+## Checklist
+
+- [x] Shows the time
+- [x] Shows the date
+- [x] Always on top
+- [ ] Current weather status
+- [ ] Window spawn on top-right of screen
+- [ ] Icons
+- [ ] Proper packaging
+- [ ] Night / day icon
+
+
 ## Building
 ```npm i```  
 ```npm start``` for local
@@ -27,18 +39,6 @@
 ![linux](linuxbuild.png)
 
 #### Builing for Linux ```electron-packager . --linux darwin```
-
-Checklist
-
-- [x] Shows the time
-- [x] Shows the date
-- [x] Always on top
-- [ ] Current weather status
-- [ ] Window spawn on top-right of screen
-- [ ] Icons
-- [ ] Proper packaging
-- [ ] Night / day icon
-
 
 ### [Buy Stardew Valley](https://www.stardewvalley.net/)
 ### [Font used](https://fontstruct.com/fontstructionsshow/1254619/stardew_valley)

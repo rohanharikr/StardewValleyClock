@@ -1,12 +1,12 @@
-![mac](sv.jpg)  
+![mac](sv.png)  
 
-Welcome to the valley!
+# Welcome to the valley!
 
 ## Building
-```npm i```
+```npm i```  
 ```npm start``` for local
 
-### Follow below commands for platform specific builds or pass ```--all``` to ```electron-packager``` to build for all platforms.
+#### Follow below commands for platform specific builds or pass ```--all``` to ```electron-packager``` to build for all platforms.
 
 ## Mac Build
 
@@ -17,7 +17,7 @@ Welcome to the valley!
 
 ## Win Build
 
-![win](windowsbuild.jpg)
+![win](windowsbuild.png)
 
 #### Builing for Windows ```electron-packager . --win32 darwin```
 
@@ -31,6 +31,7 @@ Welcome to the valley!
 Checklist
 
 - [x] Shows the time
+- [x] Shows the date
 - [x] Always on top
 - [ ] Current weather status
 - [ ] Window spawn on top-right of screen

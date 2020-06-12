@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\nimport { onMount } from 'svelte';\n\nlet d = new Date();\nconst date = d.getDate();\n\n$: hour = d.getHours();\n$: min = d.getMinutes();\n$: sec = d.getSeconds();\nlet dayOrNight = 'AM';\n\nlet day;\n\nonMount( () => {\n\tconst interval = setInterval(() => {\n\t\td = new Date();\n\t\tdayOrNight = (hour >= 12) ? \"pm\" : \"am\";\n\t}, 1000);\n});\n\nswitch (d.getDay()) {\n\tcase 0:\n\tday =\"Sun\"\n\n\tcase 1:\n\tday =\"Mon\"\n\n\tcase 2:\n\tday =\"Tue\"\n\n\tcase 3:\n\tday =\"Wed\"\n\n\tcase 4:\n\tday =\"Thu\"\n\n\tcase 5:\n\tday =\"Fri\"\n\n\tcase 6:\n\tday =\"Sat\"\n\n}\n\n</script>\n\n<main>\n\t<img src=\"clockfinal.png\" />\n\t<div class=\"date\">{day}.<span style=\"margin-left: 16px;\">{date}</span></div>\n\t<div class=\"date time\">{hour} : {min} : {sec}</div>\n</main>\n\n<style>\n\tmain {\n\t\t/*text-align: center;*/\n\t\t/*padding: 1em;*/\n\t\t/*margin: 0 auto;*/\n\t}\n\t\n\t.date{\n\t\tcolor: #320f02;\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tmargin-left: 118px;\n\t\tfont-size: 46px;\n\t\tmargin-top: 14px;\n\t\tfont-family: valley;\n\t\ttext-shadow: -2px 3px 0px rgba(233, 161, 92, 1);\n\t\topacity: 0.9electron-;\n\t}\n\n\t.time{\n\n\t\tfont-size: 46px;\n\t\tmargin-top: 100px;\n\t}\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAqDC,IAAI,eAAC,CAAC,AAIN,CAAC,AAED,oBAAK,CAAC,AACL,KAAK,CAAE,OAAO,CACd,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,WAAW,CAAE,KAAK,CAClB,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,IAAI,CAChB,WAAW,CAAE,MAAM,CACnB,WAAW,CAAE,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAC/C,OAAO,CAAE,YAAY,AACtB,CAAC,AAED,oBAAK,CAAC,AAEL,SAAS,CAAE,IAAI,CACf,UAAU,CAAE,KAAK,AAClB,CAAC"
+}

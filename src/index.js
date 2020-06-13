@@ -1,5 +1,6 @@
 const { app, BrowserWindow} = require('electron');
 const path = require('path');
+const Positioner = require('electron-positioner')
 
 // Live Reload
 require('electron-reload')(__dirname, {
@@ -26,6 +27,10 @@ const createWindow = () => {
       nodeIntegration: true
     }
   });
+
+  // position to top right on spawn
+  var positioner = new Positioner(mainWindow)
+  positioner.move('topRight')
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, '../public/index.html'));

@@ -8,10 +8,10 @@
 - [x] Shows the date
 - [x] Always on top
 - [ ] Current weather status
-- [ ] Window spawn on top-right of screen
+- [x] Window spawn on top-right of screen
 - [ ] Icons
 - [ ] Proper packaging
-- [ ] Night / day icon
+- [x] Night / day icon
 
 
 ## Building

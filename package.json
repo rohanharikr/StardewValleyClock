@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "electron-packager": "^14.2.1",
+    "electron-positioner": "^4.1.0",
     "electron-reload": "^1.5.0",
     "electron-squirrel-startup": "^1.0.0",
     "sirv-cli": "^0.4.6"

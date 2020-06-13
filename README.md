@@ -31,14 +31,14 @@
 
 ![win](windowsbuild.png)
 
-#### Builing for Windows ```electron-packager . --win32 darwin```
+#### Builing for Windows ```electron-packager . --platfom win32```
 
 
 ## Linux Build
 
 ![linux](linuxbuild.png)
 
-#### Builing for Linux ```electron-packager . --linux darwin```
+#### Builing for Linux ```electron-packager . --platform linux```
 
 ### [Buy Stardew Valley](https://www.stardewvalley.net/)
 ### [Font used](https://fontstruct.com/fontstructionsshow/1254619/stardew_valley)

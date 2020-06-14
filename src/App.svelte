@@ -17,7 +17,7 @@ onMount( () => {
 		d = new Date();
 		dayOrNight = (hour >= 12) ? "pm" : "am";
 
-		if(hour >= 6){
+		if(hour >= 19 && hour <= 6){
 			showSun = true
 		} else{
 			showSun = false
@@ -72,7 +72,7 @@ switch (d.getDay()) {
 		position: absolute;
 		top: 0;
 		left: 0;
-		margin-left: 118px;
+		margin-left: 112px;
 		font-size: 46px;
 		margin-top: 14px;
 		font-family: valley;

@@ -360,17 +360,17 @@ var app = (function () {
     			t12 = text(/*sec*/ ctx[4]);
     			if (img0.src !== (img0_src_value = /*showSun*/ ctx[0] ? "morning.png" : "night.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "id", "sunandmoon");
-    			attr_dev(img0, "class", "svelte-19ogp3n");
-    			add_location(img0, file, 55, 1, 618);
+    			attr_dev(img0, "class", "svelte-2lz5yt");
+    			add_location(img0, file, 55, 1, 632);
     			if (img1.src !== (img1_src_value = "clockfinal.png")) attr_dev(img1, "src", img1_src_value);
-    			add_location(img1, file, 57, 1, 733);
+    			add_location(img1, file, 57, 1, 747);
     			set_style(span, "margin-left", "16px");
-    			add_location(span, file, 58, 25, 787);
-    			attr_dev(div0, "class", "date svelte-19ogp3n");
-    			add_location(div0, file, 58, 1, 763);
-    			attr_dev(div1, "class", "date time svelte-19ogp3n");
-    			add_location(div1, file, 59, 1, 841);
-    			add_location(main, file, 54, 0, 610);
+    			add_location(span, file, 58, 25, 801);
+    			attr_dev(div0, "class", "date svelte-2lz5yt");
+    			add_location(div0, file, 58, 1, 777);
+    			attr_dev(div1, "class", "date time svelte-2lz5yt");
+    			add_location(div1, file, 59, 1, 855);
+    			add_location(main, file, 54, 0, 624);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -438,7 +438,7 @@ var app = (function () {
     				$$invalidate(6, d = new Date());
     				dayOrNight = hour >= 12 ? "pm" : "am";
 
-    				if (hour >= 6) {
+    				if (hour >= 19 && hour <= 6) {
     					$$invalidate(0, showSun = true);
     				} else {
     					$$invalidate(0, showSun = false);
